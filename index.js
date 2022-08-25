@@ -9,11 +9,11 @@ let countEl = document.getElementById("count-el")
  console.log(countEl)
 
  function increment(){
-   count=count+1
+   count+=1
     countEl.innerText=count
     console.log(count)
  }
- function save(){
+ function savebtn(){
      console.log("Previous entries: ", + count)
  }
 let welcomeEl=document.getElementById("welcome-el")
@@ -21,3 +21,11 @@ let name="Clifford Ombiro Mwenda"
 let message="Welcome back, "
 
 welcomeEl.innerText= message + name
+welcomeEl.innerText= welcomeEl.innerText + "!"
+
+let saveEl=document.getElementById("save-el")
+function save(){
+let countDashula=count+"-"
+saveEl.innerText+=countDashula
+}
+save()

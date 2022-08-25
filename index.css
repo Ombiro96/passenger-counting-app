@@ -33,3 +33,7 @@ button{
 #save-btn{
     background-color: darkgreen;
 }
+p{
+    font-weight: bold;
+    font-size: 20px;
+}
