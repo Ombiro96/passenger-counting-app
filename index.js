@@ -10,12 +10,12 @@ let countEl = document.getElementById("count-el")
 
  function increment(){
    count+=1
-    countEl.innerText=count
+    countEl.textContent=count
     console.log(count)
  }
- function savebtn(){
-     console.log("Previous entries: ", + count)
- }
+//  function savebtn(){
+//      console.log("Previous entries: ", + count)
+//  }//not being used
 let welcomeEl=document.getElementById("welcome-el")
 let name="Clifford Ombiro Mwenda"
 let message="Welcome back, "
@@ -25,7 +25,9 @@ welcomeEl.innerText= welcomeEl.innerText + "!"
 
 let saveEl=document.getElementById("save-el")
 function save(){
-let countDashula=count+"-"
-saveEl.innerText+=countDashula
+let countDashula=count+" - "
+saveEl.textContent += countDashula
+count=0
+countEl.textContent=count
 }
-save()
+
